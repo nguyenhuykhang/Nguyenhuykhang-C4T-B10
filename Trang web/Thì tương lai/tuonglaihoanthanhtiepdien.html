@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/91998e0ee4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Media/page.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Thì hiện tại</a>
+        <a href="#">Thì quá khứ</a>
+        <a href="#">Thì tương lai</a>
+        <a href="#">Từ quan trọng</a>
+        <a href="#">Câu và cấu trúc câu</a>
+        <a href="#">Từ</a>
+        <a href="#">Học Tiếng Anh qua bài hát</a>
+    </div>
+        <div id="container">
+            <div id="navigator" style="position: sticky; position: -webkit-sticky; top: 0; display:flex; flex-flow:column nowrap; ">
+                <a id="search" class ="slide" onclick="w3_open()"><i class="fas fa-search"></i></a>
+                <a id="menu" class ="slide" onclick="openNav()"><i class="fas fa-bars"></i></a>
+                <a id="test" class ="slide"><i class="far fa-file-alt"></i></a>
+                <a id="navigate" class="slide"><i class="fas fa-location-arrow"></i></a>
+                <a id="ReadMode" class ="slide">Aa</a>
+            </div>
+            <div id="search-bar-container">
+                <input type="text" id="search-bar">
+            </div>
+            <div id="navigate-container">
+    
+            </div>
+            <div id="text">
+                <h2 style="color: chocolate;">Tương lai hoàn thành tiếp diễn</h2> 
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color:blue; font-family: sans-serif;">1. Công thức</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li><strong>Khẳng định:</strong> S + will + have been + V_ing + O.</li>
+    <li><strong>Phủ định:</strong> S + will + NOT + have been + V_ing + O.</li>
+    <li><strong>Nghi vấn:</strong> Will + S + have been + V_ing + O?</li>
+    </ul>
+
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color:blue; font-family: sans-serif;">2. Cách dùng</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li>Dùng để diễn tả một hành động xảy ra trong quá khứ tiếp diễn liên tục đến một thời điểm cho trước trong tương lai.
+        <br>Ví dụ:
+        <br>- I will have been studying English for 10 year by the end of next month.
+        <br><em>(Tôi sẽ học tiếng Anh được 10 năm tính đến thời điểm cuối tháng sau)</em></li>
+    <li>Dùng để nhấn mạnh tính liên tục của hành động so với một hành động khác trong tương lai
+        <br>Ví dụ:
+        <br>- They will have been talking with each other for an hour by the time I get home.
+        <br><em>(Đến lúc tôi về đến nhà thì họ sẽ nói chuyện với nhau được một giờ rồi)</em></li>
+    </ul>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color:blue; font-family: sans-serif;">3. Dấu hiệu nhận biết</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li>Trong câu chứa các cụm:
+        <br>- by then: <em>(tính đến lúc đó)</em>
+        <br>- by this October: <em>(tính đến tháng 10 năm nay)</em>
+        <br>- by the end of this week/month/year: <em>(tính đến cuối tuần này/tháng này/năm nay)</em>
+        <br>- by the time + 1 mệnh đề ở thì hiện tại đơn
+    </li>
+    </ul>
+                
+        <div id="change-menu" class="w3-animate-bottom">
+            <h1 id="change-menu-title">Tuỳ chỉnh chế độ đọc</h1>
+            <div class="screen-flex" id="font">
+                <button id="AaPlus">Aa+</button>
+                <button id="AaMinus">Aa-</button>
+            </div>
+            <div class="screen-flex" id="screen">
+                <button id="White">Trắng</button>
+                <button id="Black">Đen</button>
+                <button id="Sepia">Ám vàng</button>
+            </div>
+            <!-- <div class="screen-flex">
+                <button><img src="CSS/Media/line-spacing.png" alt="Icons made by Freepik" width="20px" height="20px"></button>
+                <input type="range" min=50 max=150 value=100 id="lineSpacing">
+            </div> -->
+        </div>
+        <script src="JS/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/91998e0ee4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Media/page.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Thì hiện tại</a>
+        <a href="#">Thì quá khứ</a>
+        <a href="#">Thì tương lai</a>
+        <a href="#">Từ quan trọng</a>
+        <a href="#">Câu và cấu trúc câu</a>
+        <a href="#">Từ</a>
+        <a href="#">Học Tiếng Anh qua bài hát</a>
+    </div>
+        <div id="container">
+            <div id="navigator" style="position: sticky; position: -webkit-sticky; top: 0; display:flex; flex-flow:column nowrap; ">
+                <a id="search" class ="slide" onclick="w3_open()"><i class="fas fa-search"></i></a>
+                <a id="menu" class ="slide" onclick="openNav()"><i class="fas fa-bars"></i></a>
+                <a id="test" class ="slide"><i class="far fa-file-alt"></i></a>
+                <a id="navigate" class="slide"><i class="fas fa-location-arrow"></i></a>
+                <a id="ReadMode" class ="slide">Aa</a>
+            </div>
+            <div id="search-bar-container">
+                <input type="text" id="search-bar">
+            </div>
+            <div id="navigate-container">
+    
+            </div>
+            <div id="text">
+                <h2 style="color: chocolate;">Loại 3</h2>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color: blue; font-family: sans-serif;">1. Định nghĩa</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li><strong>Câu ước loại 3</strong> dùng để diễn tả những mong ước về một sự việc không có thật ở quá khứ, hay giả định một điều ngược lại so với thực tại đã xảy ra ở quá khứ. Chúng ta sử dụng câu ước ở quá khứ để ước điều trái với những gì xảy ra trong quá khứ, thường là để diễn tả sự nuối tiếc với tình huống ở quá khứ.</li>
+    </ul>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color: blue; font-family: sans-serif;">2. Công thức</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li><strong>Khẳng định:</strong> S + wish(es) + S + had + V3/-ed.</li>
+    <li><strong>Phủ định:</strong> S + wish(es) + S + hadn’t + V3/-ed.</li>
+    <li>IF ONLY + S + V3/-ed
+        <br>Ta có: S + WISH + S + COULD HAVE + V3/-ed = IF ONLY+ S + COULD HAVE + V3/-ed
+        <br>
+        <p>Chú thích: S - chủ ngữ, V3/-ed - động từ cột 3 trong bảng bất quy tắc hoặc động từ đuôi "ed"</p>
+    </li>
+    <li><em>Chú ý:</em>
+        <br>- Động từ "wish" chia theo thì và chia theo chủ ngữ
+        <br>- Động từ sau "wish" chia thì quá khứ hoàn thành.
+    </li>
+    </ul>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color: blue; font-family: sans-serif;">3. Ví dụ</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li>Một số ví dụ về câu ước loại 3:
+        <br>
+        <br>- Mary wishes she had gone to school yesterday
+        <br><em>(Mary ước rằng cô ấy đã đi học ngày hôm qua)</em>
+        <br>
+        <br>- I wish I hadn't gone to that party.
+        <br><em>(Tôi ước là tôi đã không đến bữa tiệc đó)</em>
+        <br>
+        <br>- She wishes she had been listening to the teacher
+        <br><em>(Cô ấy ước rằng lúc đó cô ấy nghe cô giáo giảng bài)</em>
+        <br>
+        <br>- If only I had gone by taxi. (I didn’t go by taxi).
+        <br>- She wishes she had had enough money to buy the house.
+        <br>- I wish I hadn’t failed my exam last year.
+    </li>
+    </ul>
+                
+        <div id="change-menu" class="w3-animate-bottom">
+            <h1 id="change-menu-title">Tuỳ chỉnh chế độ đọc</h1>
+            <div class="screen-flex" id="font">
+                <button id="AaPlus">Aa+</button>
+                <button id="AaMinus">Aa-</button>
+            </div>
+            <div class="screen-flex" id="screen">
+                <button id="White">Trắng</button>
+                <button id="Black">Đen</button>
+                <button id="Sepia">Ám vàng</button>
+            </div>
+            <!-- <div class="screen-flex">
+                <button><img src="CSS/Media/line-spacing.png" alt="Icons made by Freepik" width="20px" height="20px"></button>
+                <input type="range" min=50 max=150 value=100 id="lineSpacing">
+            </div> -->
+        </div>
+        <script src="JS/page.js"></script>
+</body>
+</html>

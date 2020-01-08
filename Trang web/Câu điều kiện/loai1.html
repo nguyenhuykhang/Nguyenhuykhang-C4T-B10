@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/91998e0ee4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Media/page.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Thì hiện tại</a>
+        <a href="#">Thì quá khứ</a>
+        <a href="#">Thì tương lai</a>
+        <a href="#">Từ quan trọng</a>
+        <a href="#">Câu và cấu trúc câu</a>
+        <a href="#">Từ</a>
+        <a href="#">Học Tiếng Anh qua bài hát</a>
+    </div>
+        <div id="container">
+            <div id="navigator" style="position: sticky; position: -webkit-sticky; top: 0; display:flex; flex-flow:column nowrap; ">
+                <a id="search" class ="slide" onclick="w3_open()"><i class="fas fa-search"></i></a>
+                <a id="menu" class ="slide" onclick="openNav()"><i class="fas fa-bars"></i></a>
+                <a id="test" class ="slide"><i class="far fa-file-alt"></i></a>
+                <a id="navigate" class="slide"><i class="fas fa-location-arrow"></i></a>
+                <a id="ReadMode" class ="slide">Aa</a>
+            </div>
+            <div id="search-bar-container">
+                <input type="text" id="search-bar">
+            </div>
+            <div id="navigate-container">
+    
+            </div>
+            <div id="text">
+                <h2 style="color: chocolate;">Loại 1</h2>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color: blue; font-family: sans-serif;">1. Khái niệm, công thức</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li>Câu điều kiện loại 1 còn có thể được gọi là câu điều kiện hiện tại có thể có thật. Ta sử dụng câu điều kiện loại 1 để đặt ra một điều kiện có thể thực hiện được trong hiện tại và nêu kết quả có thể xảy ra ở hiện tại hoặc tương lai.</li>
+    <li><strong>Công thức:</strong>
+        <br>If + S + V, S + will + V
+        <br>Chú thích: S - chủ ngữ, V - động từ.
+    </li>
+    <li>Ở câu điều kiện loại 1, mệnh đề "IF" dùng thì hiện tại đơn, mệnh đề chính dùng thì tương lai đơn.</li>
+    </ul>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color: blue; font-family: sans-serif;">2. Cách dùng</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li>Chỉ một sự thật hiển nhiên, một quy luật tự nhiên hoặc một hành động xảy ra thường xuyên
+        <br>Ví dụ:
+        <br>- If you heat ice, it turns to water.
+        <br><em>(Nếu bạn đun nóng nước đá nó sẽ tan thành nước)</em>
+        <br>- If you press this switch, the computer comes on.
+        <br><em>(Nếu bạn nhấn vào nút này, máy tính sẽ bật)</em></li>
+    <li>Đặt ra một điều kiện có thể thực hiện được trong hiện tại hoặc tương lai
+        <br>Ví dụ:
+        <br>- If you come into my garden, my dog will bite you.
+        <br><em>(Nếu anh bước vào vườn của tôi, con chó của tôi sẽ cắn anh)</em>
+        <br>- If it is sunny, I will go fishing.
+        <br><em>(Nếu trời nắng tốt, tôi sẽ đi câu cá)</em></li>
+    <li>Ngoài ra, các động từ tình thái như: <strong>can, may, might, should, ought to, must</strong> có thể được dùng trong mệnh đề chính để nói đến khả năng, sự chắc chắn, sự cho phép, sự bắt buộc hoặc cần thiết
+        <br>Ví dụ:
+        <br>- If you need a ticket, I can get you one
+        <br><em>(Nếu bạn cần vé, tôi có thể mua cho bạn một cái)</em></li>
+    </ul>
+                
+        <div id="change-menu" class="w3-animate-bottom">
+            <h1 id="change-menu-title">Tuỳ chỉnh chế độ đọc</h1>
+            <div class="screen-flex" id="font">
+                <button id="AaPlus">Aa+</button>
+                <button id="AaMinus">Aa-</button>
+            </div>
+            <div class="screen-flex" id="screen">
+                <button id="White">Trắng</button>
+                <button id="Black">Đen</button>
+                <button id="Sepia">Ám vàng</button>
+            </div>
+            <!-- <div class="screen-flex">
+                <button><img src="CSS/Media/line-spacing.png" alt="Icons made by Freepik" width="20px" height="20px"></button>
+                <input type="range" min=50 max=150 value=100 id="lineSpacing">
+            </div> -->
+        </div>
+        <script src="JS/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/91998e0ee4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Media/page.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Thì hiện tại</a>
+        <a href="#">Thì quá khứ</a>
+        <a href="#">Thì tương lai</a>
+        <a href="#">Từ quan trọng</a>
+        <a href="#">Câu và cấu trúc câu</a>
+        <a href="#">Từ</a>
+        <a href="#">Học Tiếng Anh qua bài hát</a>
+    </div>
+        <div id="container">
+            <div id="navigator" style="position: sticky; position: -webkit-sticky; top: 0; display:flex; flex-flow:column nowrap; ">
+                <a id="search" class ="slide" onclick="w3_open()"><i class="fas fa-search"></i></a>
+                <a id="menu" class ="slide" onclick="openNav()"><i class="fas fa-bars"></i></a>
+                <a id="test" class ="slide"><i class="far fa-file-alt"></i></a>
+                <a id="navigate" class="slide"><i class="fas fa-location-arrow"></i></a>
+                <a id="ReadMode" class ="slide">Aa</a>
+            </div>
+            <div id="search-bar-container">
+                <input type="text" id="search-bar">
+            </div>
+            <div id="navigate-container">
+    
+            </div>
+            <div id="text">
+                <h2 style="color: chocolate;">Loại 2</h2>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color: blue; font-family: sans-serif;">1. Khái niệm, công thức</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li>Câu điều kiện loại 2 là câu điều kiện không có thực ở hiện tại. Ta sử dụng câu điều kiện loại 2 để diễn tả điều không thể xảy ra ở hiện tại hoặc tương lai, chỉ là một giả thiết, một ước muốn trái ngược với thực trạng hiện tại.</li>
+    <li><strong>Công thức:</strong>
+        <br>If + S + Ved, S + would + V
+        <br>Chú thích: S - chủ ngữ, V - động từ.
+    </li>
+    <li>Ở câu điều kiện loại 2, mệnh đề "IF" dùng thì quá khứ đơn, mệnh đề chính dùng thì hiện tại đơn.</li>
+    <li>Trong câu điều kiện loại 2, ở mệnh đề "IF" riêng động từ "to be" luôn dùng "were" cho tất cả các ngôi.</li>
+    </ul>
+    <h3 class="colorMain" style="-webkit-text-size-adjust: auto; color: blue; font-family: sans-serif;">2. Cách dùng</h3>
+    <ul style="-webkit-text-size-adjust: auto; margin-left: 0px; padding-left: 17px; caret-color: rgb(66, 66, 66); color: rgb(66, 66, 66); font-family: sans-serif; font-size: 18px;">
+    <li>Diễn tả điều không thể xảy ra ở hiện tại hoặc tương lai, chỉ là một giả thiết, một ước muốn trái ngược với thực trạng hiện tại.
+        <br>Ví dụ:
+        <br>- If I were a bird, I would be very happy.
+        <br><em>(Nếu tôi là một con chim, tôi sẽ rất hạnh phúc) &lt;= tôi không thể là con chim được</em>
+        <br>- If I had a million USD, I would buy that car.
+        <br><em>(Nếu tôi có một triệu đô la, tôi sẽ mua chiếc xe đó.) = hiện tại tôi không có</em></li>
+    <li>Với "could" và "might" có thể được dùng trong mệnh đề chính để nói đến khả năng có thể xảy ra
+        <br>Ví dụ:
+        <br>- If she had a camera, she could take some photos.
+        <br><em>(Giá như có máy ảnh, cô ấy có thể chụp vài tấm hình)</em>
+        <br>- If he worked harder, he might do even better at her studies.
+        <br><em>(Giá như anh ta học chăm hơn thì kết quả học tập có thể còn tốt hơn nữa)</em></li>
+    <li>Dùng để khuyên bảo (If I were you. . .)
+        <br>Ví dụ:
+        <br>- If I were you, I would never buy that car.
+        <br><em>(Nếu tôi là bạn, tôi sẽ không bao giờ mua chiếc xe đó)</em></li>
+    </ul>
+                
+        <div id="change-menu" class="w3-animate-bottom">
+            <h1 id="change-menu-title">Tuỳ chỉnh chế độ đọc</h1>
+            <div class="screen-flex" id="font">
+                <button id="AaPlus">Aa+</button>
+                <button id="AaMinus">Aa-</button>
+            </div>
+            <div class="screen-flex" id="screen">
+                <button id="White">Trắng</button>
+                <button id="Black">Đen</button>
+                <button id="Sepia">Ám vàng</button>
+            </div>
+            <!-- <div class="screen-flex">
+                <button><img src="CSS/Media/line-spacing.png" alt="Icons made by Freepik" width="20px" height="20px"></button>
+                <input type="range" min=50 max=150 value=100 id="lineSpacing">
+            </div> -->
+        </div>
+        <script src="JS/page.js"></script>
+</body>
+</html>

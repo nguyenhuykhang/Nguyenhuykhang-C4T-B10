@@ -1,0 +1,55 @@
+/* .w-100 {
+    width: 100px;
+}
+.h-300px {
+    height: 300px;
+}
+.bg-blue {
+    background-color:blue;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.d-flex {
+    display: flex; */
+
+
+.w-500 {
+    width: 500px;
+}
+.h-100px {
+    height: 100px;
+}
+.w-100px {
+    width: 100px;
+}
+.bg-blue {
+    background-color:blue;
+}
+.d-flex {
+    display: flex;
+}
+
+.bg-yellow {
+    background-color:yellow;
+}
+.bg-red {
+    background-color: red;
+}
+
+.bg-black {
+    background-color: black;
+}
+.h-500px {
+    height: 500px;
+}
+#container {
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.bg-pink {
+    background-color: pink;
+}
